@@ -1,0 +1,9 @@
+username = "root"
+cipassword = "rootfetch99"
+#public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHZYaK+tKWpOVCxhKeTeoKLW/UoAOaj03QXPGrqY2JQm user@sample"
+cores = 2
+sockets = 2
+memory = 4096
+disk_size = 50
+ip_address = "192.168.11.204"
+ip_gateway = "192.168.11.1"

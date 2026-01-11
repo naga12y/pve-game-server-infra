@@ -1,0 +1,34 @@
+services:
+  vanilla:
+    container_name: mc_vanilla
+    build:
+      context: . # Dockerfile があるディレクトリ
+      dockerfile: /docker/Dockerfile
+    tty: true
+    stdin_open: true
+    environment:
+      ENABLE_ROLLING_LOGS: "TRUE"
+      JVM_OPTS: "-XX:MaxRAMPercentage=75"
+      EULA: "TRUE"
+      MOTD: "The World of Vanilla Server"
+      MAX_PLAYERS: 5
+      MAX_WORLD_SIZE: 10000
+      ENABLE_COMMAND_BLOCK: "TRUE"
+      SNOOPER_ENABLED: "FALSE"
+      VIEW_DISTANCE: 12
+      PVP: "FALSE"
+      LEVEL: "lv25565" # a default is "world"
+      ALLOW_FLIGHT: "TRUE"
+      USE_NATIVE_TRANSPORT: "TRUE"
+      SIMULATION_DISTANCE: ""
+      STOP_SERVER_ANNOUNCE_DELAY: 60
+      GUI: "FALSE"
+    ports:
+      - "25565:25565/tcp"
+      - "25565:25565/udp"
+    volumes:
+      - ./vanilla:/data
+      - /etc/timezone:/etc/timezone:ro
+      # Velocity の秘密鍵をマウントするためのボリューム (ローカルに velocity フォルダと秘密鍵ファイルが必要)
+      - ./velocity:/velocity:ro
+    restart: unless-stopped

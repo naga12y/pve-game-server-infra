@@ -1,0 +1,11 @@
+terraform/terraform_rsa
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/.terraform/providers/registry.terraform.io/hashicorp/local/2.5.2/darwin_arm64/LICENSE.txt
+terraform/.terraform/providers/registry.terraform.io/hashicorp/local/2.5.2/darwin_arm64/terraform-provider-local_v2.5.2_x5
+terraform/.terraform/providers/registry.terraform.io/hashicorp/tls/4.1.0/darwin_arm64/LICENSE.txt
+terraform/.terraform/providers/registry.terraform.io/hashicorp/tls/4.1.0/darwin_arm64/terraform-provider-tls_v4.1.0_x5
+terraform/.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc8/darwin_arm64/LICENSE
+terraform/.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc8/darwin_arm64/README.md
+terraform/.terraform/providers/registry.terraform.io/telmate/proxmox/3.0.1-rc8/darwin_arm64/terraform-provider-proxmox_v3.0.1-rc8
+terraform/.terraform.lock.hcl
